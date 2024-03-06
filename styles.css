@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#black-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#image-container {
+  position: relative;
+  transform-origin: center;
+  animation: rotateImages 50s linear infinite;
+  /* Adjust the animation duration as needed */
+}
+
+.image-point {
+  position: absolute;
+  width: 10px;
+  /* Adjust the size of each image point */
+  height: 10px;
+  /* Adjust the size of each image point */
+  transform-origin: center;
+}
+
+.image-point img {
+  width: 3400%;
+  /* Adjust the size of each ape image */
+  height: 3400%;
+  /* Adjust the size of each ape image */
+  object-fit: cover;
+}
+
+@keyframes rotateImages {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
