@@ -40,6 +40,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
   // if the user got more than 2 answers correct, they are allowed in the tribe
   if (correctAnswers > 2) {
     alert('Welcome to the tribe!');
+    document.getElementById('locked-content').style.display = 'block';
   } else {
     alert('Sorry, you are not allowed in the tribe.');
   }
