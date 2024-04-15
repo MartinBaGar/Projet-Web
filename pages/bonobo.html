@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bonobo.css">
   <title>Bonobo Information</title>
   <!-- You can include additional stylesheets or scripts here if needed -->
 </head>
 
 <body>
   <form>
-    <fieldset class="continent">
+    <fieldset class="continent question">
       <legend>Where do I live ?</legend>
       <input type="radio" name="continent" id="africa" value="africa">
       <label for="africa">Africa</label>
@@ -27,7 +28,7 @@
       <input type="radio" name="continent" id="antarctica" value="antarctica">
       <label for="antarctica">Antarctica</label>
     </fieldset>
-    <fieldset>
+    <fieldset class="diet question">
       <legend>Can you guess my diet ?</legend>
       <input type="checkbox" id="fruits" name="bonobo_diet" value="fruits">
       <label for="fruits">🍎 Fruits</label><br>
@@ -35,23 +36,16 @@
       <input type="checkbox" id="leaves" name="bonobo_diet" value="leaves">
       <label for="leaves">🌿 Leaves</label><br>
 
-      <input type="checkbox" id="insects" name="bonobo_diet" value="insects">
-      <label for="insects">🐜 Insects</label><br>
+      <input type="checkbox" id="spicy_food" name="bonobo_diet" value="spicy_food">
+      <label for="spicy_food">🌶️ Spicy Food</label><br>
 
-      <input type="checkbox" id="nuts" name="bonobo_diet" value="nuts">
-      <label for="nuts">🥜 Nuts</label><br>
+      <input type="checkbox" id="invertebrates" name="bonobo_diet" value="invertebrates">
+      <label for="invertebrates">🐛 Invertebrates</label><br>
 
-      <input type="checkbox" id="roots" name="bonobo_diet" value="roots">
-      <label for="roots">🥕 Roots</label><br>
-
-      <!-- Not valid answers -->
-      <input type="checkbox" id="meat" name="bonobo_diet" value="meat">
-      <label for="meat">🍗 Meat</label><br>
-
-      <input type="checkbox" id="fish" name="bonobo_diet" value="fish">
-      <label for="fish">🐟 Fish</label><br>
+      <input type="checkbox" id="large_mammals" name="bonobo_diet" value="large_mammals">
+      <label for="large_mammals">🐘 Large Mammals</label><br>
     </fieldset>
-    <fieldset>
+    <fieldset class="headcounts question">
       <legend>How many of our kind remain on earth ?</legend>
       <input type="radio" name="bonobo_population" id="1000-10000" value="1000-10000">
       <label for="1000-10000">1000-10000</label>
@@ -61,6 +55,22 @@
 
       <input type="radio" name="bonobo_population" id="50000-100000" value="50000-100000">
       <label for="50000-100000">50000-100000</label>
+    </fieldset>
+    <fieldset class="funfact1 question">
+      <legend>Do they have specific sounds they use to announce mealtimes ?</legend>
+      <input type="radio" name="snack_time_signalling" id="yes" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" name="snack_time_signalling" id="no" value="no">
+      <label for="no">No</label>
+    </fieldset>
+
+    <fieldset class="funfact2 question">
+      <legend>Do they tickle purely for fun, or does it serve a deeper social purpose in strengthening bonds within the
+        group ?</legend>
+      <input type="radio" name="tickle_torture_bonding" id="fun" value="fun">
+      <label for="fun">Purely for fun</label>
+      <input type="radio" name="tickle_torture_bonding" id="social_purpose" value="social_purpose">
+      <label for="social_purpose">Serves a deeper social purpose</label>
     </fieldset>
     <fieldset>
       <legend>What is your monkey name ?</legend>
@@ -76,9 +86,8 @@
     </fieldset>
   </form>
   <div id='result'>
-    <script type="text/javascript" src="transfert.js"></script>
-  </div> <!-- You can add more content or details about bonobos on this page -->
-  <a href="index.html">Back to Homepage</a>
+    <script src="../scripts/bonobo.js"></script>
+    <a href="index.html">Back to Homepage</a>
 </body>
 
 </html>

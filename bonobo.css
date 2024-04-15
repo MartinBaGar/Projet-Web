@@ -1,0 +1,64 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #e4e4c3;
+  background-image: url('../img/bonobo_tribe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+form {
+  background-color: #c2d6c1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+  /* Red */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+legend {
+  font-size: 1.5em;
+  color: #4d4d33;
+}
+
+label {
+  color: #4d4d33;
+}
