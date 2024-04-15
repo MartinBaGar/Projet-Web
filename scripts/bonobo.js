@@ -1,6 +1,15 @@
 document.querySelector('form').addEventListener('submit', function (event) {
   event.preventDefault(); // prevent the form from submitting
 
+  // get the login input element
+  var loginInput = document.getElementById('login');
+
+  // check if the login input field is empty
+  if (loginInput.value.trim() === '') {
+    alert('Please enter your ape name.'); // show a message to the user
+    return; // exit the function early
+  }
+
   // get all the input elements in the question fieldsets
   var inputs = document.querySelectorAll('.question input');
   var correctAnswers = 0;
@@ -39,9 +48,9 @@ document.querySelector('form').addEventListener('submit', function (event) {
 
   // if the user got more than 2 answers correct, they are allowed in the tribe
   if (correctAnswers > 2) {
-    alert('Welcome to the tribe!');
+    alert(loginInput.value + ', welcome to the tribe!');
     document.getElementById('locked-content').style.display = 'block';
   } else {
-    alert('Sorry, you are not allowed in the tribe.');
+    alert(loginInput.value + " ? That's a monkey name, not an ape name! Go back to your forest!");
   }
 });
