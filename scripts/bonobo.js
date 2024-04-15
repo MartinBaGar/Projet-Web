@@ -33,7 +33,6 @@ document.querySelector('form').addEventListener('submit', function (event) {
   }
 
 
-
   // if all correct answers for the diet question are checked, increment the correctAnswers counter
   if (fruitsChecked && leavesChecked && invertebratesChecked) {
     correctAnswers++;
