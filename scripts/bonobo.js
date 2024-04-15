@@ -32,13 +32,10 @@ document.querySelector('form').addEventListener('submit', function (event) {
     }
   }
 
-
   // if all correct answers for the diet question are checked, increment the correctAnswers counter
   if (fruitsChecked && leavesChecked && invertebratesChecked) {
     correctAnswers++;
   }
-
-  console.log(correctAnswers);
 
   // if the user got more than 2 answers correct, they are allowed in the tribe
   if (correctAnswers > 2) {
