@@ -9,13 +9,75 @@
 </head>
 
 <body>
-  <h1>Bonobo Information</h1>
-  <p>
-    The bonobo is a great ape and one of the two species making up the genus Pan.
-    Native to the Democratic Republic of the Congo, bonobos are known for their
-    peaceful and cooperative behavior.
-  </p>
-  <!-- You can add more content or details about bonobos on this page -->
+  <form>
+    <fieldset class="continent">
+      <legend>Where do I live ?</legend>
+      <input type="radio" name="continent" id="africa" value="africa">
+      <label for="africa">Africa</label>
+      <input type="radio" name="continent" id="asia" value="asia">
+      <label for="asia">Asia</label>
+      <input type="radio" name="continent" id="europe" value="europe">
+      <label for="europe">Europe</label>
+      <input type="radio" name="continent" id="north-america" value="north-america">
+      <label for="north-america">North America</label>
+      <input type="radio" name="continent" id="south-america" value="south-america">
+      <label for="south-america">South America</label>
+      <input type="radio" name="continent" id="oceania" value="oceania">
+      <label for="oceania">Oceania</label>
+      <input type="radio" name="continent" id="antarctica" value="antarctica">
+      <label for="antarctica">Antarctica</label>
+    </fieldset>
+    <fieldset>
+      <legend>Can you guess my diet ?</legend>
+      <input type="checkbox" id="fruits" name="bonobo_diet" value="fruits">
+      <label for="fruits">🍎 Fruits</label><br>
+
+      <input type="checkbox" id="leaves" name="bonobo_diet" value="leaves">
+      <label for="leaves">🌿 Leaves</label><br>
+
+      <input type="checkbox" id="insects" name="bonobo_diet" value="insects">
+      <label for="insects">🐜 Insects</label><br>
+
+      <input type="checkbox" id="nuts" name="bonobo_diet" value="nuts">
+      <label for="nuts">🥜 Nuts</label><br>
+
+      <input type="checkbox" id="roots" name="bonobo_diet" value="roots">
+      <label for="roots">🥕 Roots</label><br>
+
+      <!-- Not valid answers -->
+      <input type="checkbox" id="meat" name="bonobo_diet" value="meat">
+      <label for="meat">🍗 Meat</label><br>
+
+      <input type="checkbox" id="fish" name="bonobo_diet" value="fish">
+      <label for="fish">🐟 Fish</label><br>
+    </fieldset>
+    <fieldset>
+      <legend>How many of our kind remain on earth ?</legend>
+      <input type="radio" name="bonobo_population" id="1000-10000" value="1000-10000">
+      <label for="1000-10000">1000-10000</label>
+
+      <input type="radio" name="bonobo_population" id="10-50000" value="10-50000">
+      <label for="10-50000">10000-50000</label>
+
+      <input type="radio" name="bonobo_population" id="50000-100000" value="50000-100000">
+      <label for="50000-100000">50000-100000</label>
+    </fieldset>
+    <fieldset>
+      <legend>What is your monkey name ?</legend>
+      <input type="text" name="login" id="login">
+    </fieldset>
+    <fieldset>
+      <legend for="devise">Do you have something to say to the guard of the tribe ?</legend>
+      <textarea name="devise" id="devise" cols="30" rows="10"></textarea>
+    </fieldset>
+    <fieldset>
+      <button type="submit">Attempt joining the tribe</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+  <div id='result'>
+    <script type="text/javascript" src="transfert.js"></script>
+  </div> <!-- You can add more content or details about bonobos on this page -->
   <a href="index.html">Back to Homepage</a>
 </body>
 
