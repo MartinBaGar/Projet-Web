@@ -13,6 +13,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
   // get all the input elements in the question fieldsets
   var inputs = document.querySelectorAll('.question input');
   var correctAnswers = 0;
+  var accessTribe = False
 
   // variables to track if all correct answers for the diet question are checked
   var fruitsChecked = false;
@@ -48,6 +49,10 @@ document.querySelector('form').addEventListener('submit', function (event) {
 
   // if the user got more than 2 answers correct, they are allowed in the tribe
   if (correctAnswers > 2) {
+    accessTribe = True
+  }
+
+  if (accessTribe === True) {
     alert(loginInput.value + ', welcome to the tribe!');
     document.getElementById('locked-content').style.display = 'block';
   } else {

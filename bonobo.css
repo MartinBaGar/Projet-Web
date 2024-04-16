@@ -1,6 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  background: #e4e4c3 url('../img/bonobo_tribe.jpg') no-repeat;
+  background: #e4e4c3 url('img/bonobo_tribe.jpg') no-repeat;
   background-size: cover;
   padding: 20px;
   display: flex;
