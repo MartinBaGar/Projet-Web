@@ -2,12 +2,12 @@ const imageContainer = document.getElementById('image-container');
 const blackScreen = document.getElementById('black-screen');
 
 const apeImages = [
-  '../img/bonobo_icon.png', '../img/chimp_icon.png', '../img/orangutan_icon.png', '../img/gibbon_icon.png', '../img/homosapsap_icon.png', '../img/gorilla_icon.png',
+  'img/bonobo_icon.png', 'img/chimp_icon.png', 'img/orangutan_icon.png', 'img/gibbon_icon.png', 'img/homosapsap_icon.png', 'img/gorilla_icon.png',
   // Add six images for each ape species
 ];
 
 const apePages = [
-  '../pages/bonobo.html', '../pages/chimp.html', '../pages/orangutan.html', '../pages/gibbon.html', '../pages/homosapsap.html', '../pages/gorilla.html',
+  'pages/bonobo.html', 'pages/chimp.html', 'pages/orangutan.html', 'pages/gibbon.html', 'pages/homosapsap.html', 'pages/gorilla.html',
   // Add the corresponding HTML page for each ape species
 ];
 

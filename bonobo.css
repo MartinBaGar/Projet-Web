@@ -6,9 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Vertically center content */
   align-items: center;
-  /* Horizontally center content */
   text-align: center;
 }
 
@@ -20,12 +18,10 @@ form {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   max-width: 1000px;
   margin: 20px auto;
-  /* Margin applied to both sides */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Horizontally center content */
 }
 
 .intro {
@@ -33,7 +29,6 @@ form {
   font-size: 20pt;
   font-weight: bold;
   color: #4d4d33;
-  /* Moved color property here */
 }
 
 form fieldset {
@@ -41,7 +36,6 @@ form fieldset {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  /* Horizontally center content */
 }
 
 .option,
@@ -54,7 +48,6 @@ form fieldset {
 
 .option:last-child {
   padding-right: 30px;
-  /* Apply padding only to the last child */
 }
 
 input[type="radio"],
@@ -80,14 +73,22 @@ button[type="reset"] {
   background-color: #f44336;
 }
 
+a {
+  font-size: 40px;
+  font-weight: bold;
+  color: darkgreen;
+}
+
 legend {
+  display: block;
+  width: 100%;
+  text-align: center;
   font-size: 25px;
   color: #4d4d33;
   font-weight: bold;
 }
 
-a {
-  font-size: 40px;
-  font-weight: bold;
-  color: darkgreen;
+textarea[name="devise"] {
+  width: 700px;
+  height: 50px;
 }
