@@ -10,67 +10,129 @@
 </head>
 
 <body>
+  <div class="intro">
+    <p>
+      Your curiosity for our kind lead you to us. We will see if you deserve to join the tribe.<br>
+      Success means access to our secrets. Failure will impose your departure.
+    </p>
+  </div>
   <form>
     <fieldset class="continent question">
       <legend>Where do I live ?</legend>
-      <input type="radio" name="continent" id="africa" value="africa">
-      <label for="africa">Africa</label>
-      <input type="radio" name="continent" id="asia" value="asia">
-      <label for="asia">Asia</label>
-      <input type="radio" name="continent" id="europe" value="europe">
-      <label for="europe">Europe</label>
-      <input type="radio" name="continent" id="north-america" value="north-america">
-      <label for="north-america">North America</label>
-      <input type="radio" name="continent" id="south-america" value="south-america">
-      <label for="south-america">South America</label>
-      <input type="radio" name="continent" id="oceania" value="oceania">
-      <label for="oceania">Oceania</label>
-      <input type="radio" name="continent" id="antarctica" value="antarctica">
-      <label for="antarctica">Antarctica</label>
+      <div class="option">
+        <input type="radio" name="continent" id="africa" value="africa">
+        <label for="africa">Africa</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="asia" value="asia">
+        <label for="asia">Asia</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="europe" value="europe">
+        <label for="europe">Europe</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="north-america" value="north-america">
+        <label for="north-america">North America</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="south-america" value="south-america">
+        <label for="south-america">South America</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="oceania" value="oceania">
+        <label for="oceania">Oceania</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="antarctica" value="antarctica">
+        <label for="antarctica">Antarctica</label>
+      </div>
     </fieldset>
     <fieldset class="diet question">
       <legend>Can you guess my diet ?</legend>
-      <input type="checkbox" id="fruits" name="bonobo_diet" value="fruits">
-      <label for="fruits">🍎 Fruits</label><br>
-
-      <input type="checkbox" id="leaves" name="bonobo_diet" value="leaves">
-      <label for="leaves">🌿 Leaves</label><br>
-
-      <input type="checkbox" id="spicy_food" name="bonobo_diet" value="spicy_food">
-      <label for="spicy_food">🌶️ Spicy Food</label><br>
-
-      <input type="checkbox" id="invertebrates" name="bonobo_diet" value="invertebrates">
-      <label for="invertebrates">🐛 Invertebrates</label><br>
-
-      <input type="checkbox" id="large_mammals" name="bonobo_diet" value="large_mammals">
-      <label for="large_mammals">🐘 Large Mammals</label><br>
+      <div class="option">
+        <input type="checkbox" id="fruits" name="bonobo_diet" value="fruits">
+        <label for="fruits">
+          <div class="emoji-text">
+            <span>🍎</span>
+            <span>Fruits</span>
+          </div>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="leaves" name="bonobo_diet" value="leaves">
+        <label for="leaves">
+          <div class="emoji-text">
+            <span>🌿</span>
+            <span>Leaves</span>
+          </div>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="spicy_food" name="bonobo_diet" value="spicy_food">
+        <label for="spicy_food">
+          <div class="emoji-text">
+            <span>🌶️</span>
+            <span>Spicy Food</span>
+          </div>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="invertebrates" name="bonobo_diet" value="invertebrates">
+        <label for="invertebrates">
+          <div class="emoji-text">
+            <span>🐛</span>
+            <span>Invertebrates</span>
+          </div>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="large_mammals" name="bonobo_diet" value="large_mammals">
+        <label for="large_mammals">
+          <div class="emoji-text">
+            <span>🐘</span>
+            <span>Large Mammals</span>
+          </div>
+        </label>
+      </div>
     </fieldset>
     <fieldset class="headcounts question">
       <legend>How many of our kind remain on earth ?</legend>
-      <input type="radio" name="bonobo_population" id="1000-10000" value="1000-10000">
-      <label for="1000-10000">1000-10000</label>
-
-      <input type="radio" name="bonobo_population" id="10000-50000" value="10000-50000">
-      <label for="10000-50000">10000-50000</label>
-
-      <input type="radio" name="bonobo_population" id="50000-100000" value="50000-100000">
-      <label for="50000-100000">50000-100000</label>
+      <div class="option">
+        <input type="radio" name="bonobo_population" id="1000-10000" value="1000-10000">
+        <label for="1000-10000">1000-10000</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="bonobo_population" id="10000-50000" value="10000-50000">
+        <label for="10000-50000">10000-50000</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="bonobo_population" id="50000-100000" value="50000-100000">
+        <label for="50000-100000">50000-100000</label>
+      </div>
     </fieldset>
     <fieldset class="funfact1 question">
       <legend>Do they have specific sounds they use to announce mealtimes ?</legend>
-      <input type="radio" name="snack_time_signalling" id="yes" value="yes">
-      <label for="yes">Yes</label>
-      <input type="radio" name="snack_time_signalling" id="no" value="no">
-      <label for="no">No</label>
+      <div class="option">
+        <input type="radio" name="snack_time_signalling" id="yes" value="yes">
+        <label for="yes">Yes</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="snack_time_signalling" id="no" value="no">
+        <label for="no">No</label>
+      </div>
     </fieldset>
-
     <fieldset class="funfact2 question">
       <legend>Do they tickle purely for fun, or does it serve a deeper social purpose in strengthening bonds within the
         group ?</legend>
-      <input type="radio" name="tickle_torture_bonding" id="fun" value="purely for fun">
-      <label for="fun">Purely for fun</label>
-      <input type="radio" name="tickle_torture_bonding" id="social_purpose" value="social_purpose">
-      <label for="social_purpose">Serves a deeper social purpose</label>
+      <div class="option">
+        <input type="radio" name="tickle_torture_bonding" id="fun" value="purely for fun">
+        <label for="fun">Purely for fun</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="tickle_torture_bonding" id="social_purpose" value="social_purpose">
+        <label for="social_purpose">Serves a deeper social purpose</label>
+      </div>
     </fieldset>
     <fieldset>
       <legend>What is your monkey name ?</legend>
