@@ -4,19 +4,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/orangutan.css">
   <title>Orangutan Information</title>
-  <!-- You can include additional stylesheets or scripts here if needed -->
 </head>
 
 <body>
-  <h1>Orangutan Information</h1>
-  <p>
-    The orangutan is one of the three extant species of great apes. Native to
-    Indonesia and Malaysia, orangutans are known for their intelligence,
-    arboreal lifestyle, and distinctive red fur.
-  </p>
-  <!-- You can add more content or details about orangutans on this page -->
-  <a href="index.html">Back to Homepage</a>
+  <div class="intro">
+    <p>
+      Your curiosity for our kind lead you to us. We will see if you deserve to join the tribe.<br>
+      Success means access to our secrets. Failure will impose your departure.
+    </p>
+  </div>
+  <form>
+    <fieldset class="continent question">
+      <legend>Where do I live ?</legend>
+      <div class="option">
+        <input type="radio" name="continent" id="africa" value="africa">
+        <label for="africa">Africa</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="asia" value="asia">
+        <label for="asia">Asia</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="europe" value="europe">
+        <label for="europe">Europe</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="north-america" value="north-america">
+        <label for="north-america">North America</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="south-america" value="south-america">
+        <label for="south-america">South America</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="oceania" value="oceania">
+        <label for="oceania">Oceania</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="continent" id="antarctica" value="antarctica">
+        <label for="antarctica">Antarctica</label>
+      </div>
+    </fieldset>
+    <fieldset class="diet question">
+      <legend>Can you guess my diet ?</legend>
+      <div class="option">
+        <input type="checkbox" id="fruits" name="orangutan_diet" value="fruits">
+        <label for="fruits">
+          <div class="emoji-text">
+            <span>🍎</span>
+            <span>Fruits</span>
+          </div>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="bark" name="orangutan_diet" value="bark">
+        <label for="bark">
+          <div class="emoji-text">
+            <span>🌳</span>
+            <span>Bark</span>
+          </div>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="small_sticks" name="orangutan_diet" value="small_sticks">
+        <label for="small_sticks">
+          <div class="emoji-text">
+            <span>🌿</span>
+            <span>Small Sticks</span>
+          </div>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="soil" name="orangutan_diet" value="soil">
+        <label for="soil">
+          <div class="emoji-text">
+            <span>🌱</span>
+            <span>Soil</span>
+          </div>
+        </label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="rocks" name="orangutan_diet" value="rocks">
+        <label for="rocks">
+          <div class="emoji-text">
+            <span>🪨</span>
+            <span>Rocks</span>
+          </div>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="headcounts question">
+      <legend>How many of our kind remain on earth ?</legend>
+      <div class="option">
+        <input type="radio" name="orangutan_population" id="50000" value="50000">
+        <label for="50000">~50000</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="orangutan_population" id="100000" value="100000">
+        <label for="100000">~100000</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="orangutan_population" id="200000" value="200000">
+        <label for="200000">~200000</label>
+      </div>
+    </fieldset>
+    <fieldset class="funfact1 question">
+      <legend>Which one of these weird facts is true?</legend>
+      <div class="option">
+        <input type="radio" name="weird_fact" id="no_nails" value="no_nails">
+        <label for="no_nails">1/3 of orangutans<br>do not have nails on their big toes</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="weird_fact" id="vertigo" value="vertigo">
+        <label for="vertigo">1/3 of orangutans<br>have vertigo</label>
+      </div>
+    </fieldset>
+    <fieldset class="funfact2 question">
+      <legend>When we fight we can make you think of:</legend>
+      <div class="option">
+        <input type="radio" name="fight_style" id="sumo" value="sumo">
+        <label for="sumo">Sumo wrestlers</label>
+      </div>
+      <div class="option">
+        <input type="radio" name="fight_style" id="boxers" value="boxers">
+        <label for="boxers">Boxers</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>What is your name ?</legend>
+      <input type="text" name="login" id="login">
+    </fieldset>
+    <fieldset>
+      <legend for="devise">Do you have something to add? <br>
+        *the guard's belly begins to gurgle*</legend>
+      <textarea name="devise" id="devise" cols="30" rows="10"></textarea>
+    </fieldset>
+    <fieldset>
+      <button type="submit">Attempt joining the tribe</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+  <div id='result'>
+    <script src="scripts/orangutan.js"></script>
+    <iframe id="locked-content" style="display: none;" width="560" height="315"
+      src="https://www.youtube.com/embed/IFACrIx5SZ0" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <a href="../index.html">Back to Homepage<br></a>
+    <a href="CV_raph.html" style="font-size: 16pt;">CV of a co-creator of the website</a>
 </body>
 
 </html>

@@ -12,25 +12,25 @@ document.querySelector('form').addEventListener('submit', function (event) {
   var correctAnswers = 0;
   var dietOptions = {
     fruits: false,
-    leaves: false,
-    invertebrates: false,
+    bark: false,
+    soil: false,
     otherFoodUnchecked: true
   };
 
   for (var i = 0; i < inputs.length; i++) {
     if (inputs[i].checked) {
       var inputValue = inputs[i].value.toLowerCase();
-      if (['africa', '10000-50000', 'yes', 'purely for fun'].includes(inputValue)) {
+      if (['africa', '100000', 'no_nails', 'sumo'].includes(inputValue)) {
         correctAnswers++;
-      } else if (['fruits', 'leaves', 'invertebrates'].includes(inputValue)) {
+      } else if (['fruits', 'bark', 'soil'].includes(inputValue)) {
         dietOptions[inputValue] = true;
-      } else if (['spicy_food', 'large_mammals'].includes(inputValue)) {
+      } else if (['small_sticks', 'rocks'].includes(inputValue)) {
         dietOptions.otherFoodUnchecked = false;
       }
     }
   }
 
-  if (dietOptions.fruits && dietOptions.leaves && dietOptions.invertebrates && dietOptions.otherFoodUnchecked) {
+  if (dietOptions.fruits && dietOptions.bark && dietOptions.soil && dietOptions.otherFoodUnchecked) {
     correctAnswers++;
   }
 
@@ -42,6 +42,6 @@ document.querySelector('form').addEventListener('submit', function (event) {
     alert(loginInput.value + ', welcome to the tribe!');
     document.getElementById('locked-content').style.display = 'block';
   } else {
-    alert(loginInput.value + " ? That's a monkey name, not an ape name! Go back to your forest!");
+    alert(loginInput.value + " ? That's a monkey name, not an orangutan name! Go back to your forest!");
   }
 });

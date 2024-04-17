@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+h2:hover {
+    color: red;
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.leftbar {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    flex: 0.3;
+}
+
+.rightbar {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 200px;
+    flex: 0.7;
+
+}
+
+.intitule {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.sous_intitule {
+    font-weight: lighter;
+    color: gray;
+    font-style: italic;
+}
+
+.special {
+    margin-top: 85px;
+}
+
+.annee-resume {
+    display: flex;
+}
+
+.annee {
+    flex: 0 0 15%;
+    padding-right: 10px;
+    text-align: center;
+    padding-right: 1px;
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.resume {
+    flex: 0 0 85%;
+}
+
+.bigger p:hover {
+    transform: scale(1.2) translateX(+10px);
+}
+
+.volontariat-image {
+    float: left;
+    margin-right: 10px;
+    height: 150px;
+}
+
+.volontariat-image:hover {
+    transform: scale(3) translateY(-75px);
+}
+
+.annee-resume:hover {
+    border: 3px solid #B87333;
+}
+
+.langue {
+    position: relative;
+    padding-left: 30px;
+}
+
+.langue::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.langue:hover::before {
+    background-image: url('../img/drapeau_fr.png');
+    opacity: 1;
+}
+
+.langue.anglais:hover:before {
+    background-image: url('../img/drapeau_en.png');
+}
+
+.langue.espagnol:hover:before {
+    background-image: url('../img/drapeau_es.png');
+}
+
+.texte-volontariat {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: underline;
+}
