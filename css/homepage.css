@@ -18,23 +18,17 @@ body {
   position: relative;
   transform-origin: center;
   animation: rotateImages 50s linear infinite;
-  /* Adjust the animation duration as needed */
 }
 
 .image-point {
   position: absolute;
   width: 10px;
-  /* Adjust the size of each image point */
   height: 10px;
-  /* Adjust the size of each image point */
-  transform-origin: center;
 }
 
 .image-point img {
-  width: 3400%;
-  /* Adjust the size of each ape image */
-  height: 3400%;
-  /* Adjust the size of each ape image */
+  width: 2500%;
+  height: 2500%;
   object-fit: cover;
 }
 
